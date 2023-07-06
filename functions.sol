@@ -11,13 +11,22 @@ contract MyContract {
         return name;
     }
 
-    // function resetName() public {
-    //     name = "set name";
-    // }
+    function resetName1() public {
+        name = "set name";
+    }
 
     // ''visibility'' 
 
-    function resetName() internal  {
+    function resetName2() internal  {
         name = "set name";
+    }
+
+
+    // function visibility internal ? private ? public
+
+    int  public count = 3;
+
+    function increment1() internal {
+        count = count + 1;
     }
 }
